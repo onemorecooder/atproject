@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Bg from "./components/bg/Bg";
+import MouseTracker from "./components/mouseTracker/MouseTracker";
+import { React } from "react";
+
+import "./fonts/SpaceMono-Regular.ttf";
+import ColorChanger from "./components/colorChanger/ColorChanger";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ColorChanger />
+      <MouseTracker />
+      <Bg />
     </div>
   );
 }
